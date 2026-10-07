@@ -1,0 +1,27 @@
+README.md
+  s_0f9efba8c39970::t_7970581bccc39d 2-75
+src/index.html
+  s_0f9efba8c39970::t_dc337abf71f98d 58-75,77
+src/shoelace-components.ts
+  s_0f9efba8c39970::t_e9d81c17de4c03 6,17
+src/styles.scss
+  s_0f9efba8c39970::t_82e41b5d4989f9 4
+src/styles/_howto.scss
+  s_0f9efba8c39970::t_119cdbb1b632bc 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7d57d985c528abe612cd391f1b838b16afc981e0",
+  "prompts": {},
+  "sessions": {
+    "s_0f9efba8c39970": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "401e98b1-31e2-4e00-85d8-283909a3454f",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Sebastian Prinz <sebastian.prinz@zollsoft.de>"
+    }
+  }
+}
