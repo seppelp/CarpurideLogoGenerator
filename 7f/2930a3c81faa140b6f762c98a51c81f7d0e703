@@ -1,0 +1,21 @@
+src/index.html
+  s_0f9efba8c39970::t_bd87479c5fbb0f 6-7,22
+src/index.ts
+  s_0f9efba8c39970::t_b11db6e69f3819 46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7f2930a3c81faa140b6f762c98a51c81f7d0e703",
+  "prompts": {},
+  "sessions": {
+    "s_0f9efba8c39970": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "401e98b1-31e2-4e00-85d8-283909a3454f",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Sebastian Prinz <sebastian.prinz@zollsoft.de>"
+    }
+  }
+}
