@@ -9,12 +9,12 @@ import SlDialog from '@shoelace-style/shoelace/dist/components/dialog/dialog.js'
 import SlInput from '@shoelace-style/shoelace/dist/components/input/input.js';
 import SlSelect from '@shoelace-style/shoelace/dist/components/select/select.js';
 
-import Plausible, { EventOptions, PlausibleOptions } from "plausible-tracker";
-var plausible = Plausible({
-  domain: 'carpu.dszymanski.pl',
-  apiHost: 'https://plausible.dszymanski.pl'
-});
-plausible.enableAutoPageviews();
+// Analytics are disabled in this fork. Upstream reports usage to the original
+// author's Plausible instance, which would be polluted by a separately hosted copy.
+var plausible = {
+  trackEvent: (_name: string, _options?: { props?: { [key: string]: string | number } }) => { },
+  enableAutoPageviews: () => { }
+};
 
 function randomString(length: number) {
   var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
