@@ -3,6 +3,7 @@ import '@shoelace-style/shoelace/dist/themes/dark.css';
 
 import SlAlert from '@shoelace-style/shoelace/dist/components/alert/alert.js';
 import SlButton from '@shoelace-style/shoelace/dist/components/button/button.js';
+import SlDetails from '@shoelace-style/shoelace/dist/components/details/details.js';
 import SlDialog from '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
 import SlInput from '@shoelace-style/shoelace/dist/components/input/input.js';
 import SlOption from '@shoelace-style/shoelace/dist/components/option/option.js';
@@ -13,6 +14,7 @@ setBasePath("shoelace");
 let components_mock = [
     SlAlert.version,
     SlButton.version,
+    SlDetails.version,
     SlDialog.version,
     SlInput.version,
     SlOption.version,

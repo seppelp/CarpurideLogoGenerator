@@ -55,8 +55,26 @@
     <div class="actions-container">
       <sl-button disabled="" id="download-button"><sl-icon slot="prefix" name="download"></sl-icon>Download boot logo</sl-button>
     </div>
+    <div class="howto">
+      <sl-details summary="How to create and install your boot logo">
+        <ol>
+          <li><strong>Prepare the image.</strong> It should be exactly the resolution of your model (shown by the glowing box after you pick a model, e.g. 1080&times;540 for the W602BS Pro). A static PNG or JPG, no GIF. The app warns you if the size does not match.</li>
+          <li><strong>Pick your model</strong> in the dropdown above, then <strong>upload the image</strong>. It is drawn onto the display-sized canvas.</li>
+          <li><strong>Download boot logo.</strong> You get a file named <code>isp_part.bin</code>. Nothing is uploaded anywhere, everything happens in your browser.</li>
+          <li><strong>Prepare a USB stick.</strong> Format it as FAT32 (USB 3.0, 32&nbsp;GB or less is recommended by Carpuride). Copy <code>isp_part.bin</code> into the root of the stick. It must be the <em>only</em> file and the name must stay exactly <code>isp_part.bin</code>, so watch out for <code>isp_part(1).bin</code> after a second download.</li>
+          <li><strong>Flash.</strong> Plug the stick into the powered-off Carpuride unit, power it on and wait for the confirmation. Then power off, remove the stick and power on again.</li>
+        </ol>
+        <p>
+          <strong>Which models use this file?</strong> Most Carpuride units, including W502, W602BS Pro, W70x, W901 and W103, take <code>isp_part.bin</code>. The W603 family and W903/W905 expect a <code>boot_logo.jpg</code> instead and C92/C98 a <code>CARB3.img</code>; this tool cannot create those.
+          Resolutions follow the <a href="https://carpuride.com/blogs/guide/carpuride-system-boot-screen-setup-guide" target="_blank" rel="noopener">official Carpuride guide</a>.
+        </p>
+        <p>
+          <strong>Already have an <code>isp_part.bin</code>?</strong> Upload it instead of an image and the app shows its resolution and whether it matches the selected model.
+        </p>
+      </sl-details>
+    </div>
     <div class="footer">
-      Created by <a href="https://szymanski.io/">Dominik Szymański</a>, domints, <a href="https://github.com/domints">GitHub</a>, <a href="https://www.linkedin.com/in/dominik-szyma%C5%84ski-228152122/">LinkedIn</a>. For source code visit <a href="https://github.com/domints/CarpurideLogoGenerator">my GitHub Repo</a>. For warranty (no warranty) info click <a href="#" id="show-warranty-popup">here</a>.
+      Created by <a href="https://szymanski.io/">Dominik Szymański</a>, domints, <a href="https://github.com/domints">GitHub</a>, <a href="https://www.linkedin.com/in/dominik-szyma%C5%84ski-228152122/">LinkedIn</a>. For source code visit <a href="https://github.com/domints/CarpurideLogoGenerator">my GitHub Repo</a>. This copy is a <a href="https://github.com/seppelp/CarpurideLogoGenerator">fork</a> adding the W602BS Pro, with analytics removed. For warranty (no warranty) info click <a href="#" id="show-warranty-popup">here</a>.
     </div>
   </div>
   <sl-dialog label="No warranty" class="dialog-overview" id="no-warranty-dialog">
